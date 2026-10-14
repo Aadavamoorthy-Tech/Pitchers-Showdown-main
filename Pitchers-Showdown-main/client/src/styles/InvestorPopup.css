@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Noot';
+  src: url('../assets/fonts/noot.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url('../assets/investmentbg.jpg') center/cover no-repeat;
+  font-family: 'Noot', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.investment-popup-bg {
+  background: url("../assets/investmentbubble.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.investment-popup-bubble {
+  position: relative;
+  background: url('../assets/investmentbubble.jpg') center/contain no-repeat;
+  width: 900px;
+  height: 520px;
+  max-width: 98vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2.5rem 5rem;
+  border: none;
+  font-family: 'Noot', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.investment-popup-bubble h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-shadow: 1px 2px 0 #fff, 2px 4px 0 #000, 0 0 2px #fff;
+}
+
+.investment-popup-bubble .description {
+  font-size: 1.15rem;
+  color: #181818;
+  text-shadow: 1px 1px #fff, 2px 2px #0002;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.investment-popup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  width: 75%;
+}
+
+.investment-popup-form input[type="number"] {
+  flex: 2;
+  padding: 0.7em 1em;
+  width: 220px;
+  border-radius: 18px;
+  border: none;
+  background: #ddd;
+  color: #787878;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: 'Noot', Arial, sans-serif;
+  letter-spacing: 1.5px;
+  box-shadow: 0 2px 6px #0002;
+  outline: none;
+  text-align: center;
+}
+.investment-popup-form input[type="number"]:focus {
+  background: #fffef1;
+  border: 2px solid #ffc600;
+  color: #222;
+}
+
+.investment-popup-form button {
+  flex: 1;
+  background: #ffc53a;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-family: 'Noot', Arial, sans-serif;
+  padding: 0.7em 2.3em;
+  cursor: pointer;
+  box-shadow: 0 2px 6px #0003;
+  letter-spacing: 2px;
+  transition: background 0.16s;
+}
+.investment-popup-form button:disabled {
+  background: #ececec;
+  color: #a8a8a8;
+  cursor: not-allowed;
+}
+
+.remaining-amount-label {
+  display: inline-block;
+  background: #170cee;
+  color: #fff;
+  font-size: 1.05rem;
+  font-family: 'Noot', Arial, sans-serif;
+  padding: 0.29em 1.3em;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 1px 2px #0003;
+  margin-top: 1.1em;
+  margin-bottom: 0.5em;
+  border: 2px solid #fff;
+}
+
+.error-message {
+  color: #e03d3d;
+  margin-top: 0.5em;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.investment-popup-close-btn {
+  position: absolute;
+  bottom: 27px;
+  right: 40px;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Noot', Arial, sans-serif;
+  font-weight: bold;
+  padding: 0;
+  transition: color 0.15s;
+}
+.investment-popup-close-btn:hover {
+  color: #ffc53a;
+}
